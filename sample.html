@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tab-container{
+            width: 800px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        .tab{
+            border-bottom: 1px solid #ccc;
+            padding-left: 10px;
+        }
+        .content{
+            padding-left: 10px;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .tab li{
+            width: 75px;
+            color: #555;
+            margin-top: 10px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tab .active{
+            border: 1px solid #ccc;
+            border-bottom: 1px solid #fff;
+            color: greenyellow;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: 1px;
+        }
+        .content li{
+            display:none;
+        }
+        .content .active{
+            display: block;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <ul class="tab">
+            <li class="active">按键1</li>
+            <li>按键2</li>
+            <li>按键3</li>
+        </ul>
+        <ul class="content clearfix">
+            <li class="active">1<!--<img src="https://i.loli.net/2018/04/01/5ac0515dd6f92.jpg" alt="">--></li>
+            <li>2<!--<img src="https://i.loli.net/2018/04/01/5ac0521b83306.jpg" alt="">--></li>
+            <li>3<!--<img src="https://i.loli.net/2018/04/01/5ac0519d9ec14.jpg" alt="">--></li>
+        </ul>
+    </div>
+    <div class="tab-container">
+        <ul class="tab">
+            <li class="active">按键1</li>
+            <li>按键2</li>
+            <li>按键3</li>
+        </ul>
+        <ul class="content clearfix">
+            <li class="active">1<img src="https://i.loli.net/2018/04/01/5ac0515dd6f92.jpg" alt="" height="200" width="200"></li>
+            <li>2<img src="https://i.loli.net/2018/04/01/5ac0521b83306.jpg" alt="" height="200" width="200"></li>
+            <li>3<img src="https://i.loli.net/2018/04/01/5ac0519d9ec14.jpg" alt="" height="200" width="200"></li>
+        </ul>
+    </div>
+    <script src="./tab.js"></script>
+</body>
+</html>
